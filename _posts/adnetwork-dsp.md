@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /third/
+permalink: /adnetworks-dsp/
 title: '애드네트워크와 DSP😎 '
 date: 2021-05-05 21:00:00 +09:00
 feature: '/img/posts/third/ep3_fromjisu.jpg'
