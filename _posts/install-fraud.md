@@ -5,7 +5,7 @@ title: '그 인스톨.. 사실 가짜였어요😅'
 date: 2021-04-18 15:30:00 +09:00
 feature: '/img/posts/first/ep1_fromjisu.jpg'
 categories:
-  - digital_Mkt
+  - marketing
 tags:
   - fraud
   - 프라우드
