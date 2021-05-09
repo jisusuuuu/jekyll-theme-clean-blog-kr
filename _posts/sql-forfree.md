@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /second/
+permalink: /sql-forfree/
 title: 'SQL 초급자들을 위한 무료 튜토리얼 사이트 🔥 '
 date: 2021-04-21 21:00:00 +09:00
 feature: '/img/posts/second/ep2_fromjisu.JPG'
