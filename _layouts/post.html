@@ -57,8 +57,12 @@ layout: default
   {% include disqus.html %}
 
   <script>
-    var event = document.querySelector('#post-content');
-    event.addEventListener("view", function( ) {
-      console.log("view!!");
-      }, false);
-    </script>
+  var event = document.querySelector('#post-content');
+  event.addEventListener("view", function( ) {
+    gtag('event', 'view', {
+    'event_category': '글',
+    'event_label': 'title',
+    'value': 10
+    });
+    }, false);
+  </script>
