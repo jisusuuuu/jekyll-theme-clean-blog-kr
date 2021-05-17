@@ -53,13 +53,10 @@ layout: default
   </article>
 
   <script>
-    var event = document.querySelector('#post-content');
+    var event = document.querySelector('#post-contents');
     event.addEventListener("view", function( ) {
-      gtag('event', 'action', {
-      'event_category': 'posts',
-      'event_label': 'label',
-      'value': 10
-      });
+      console.log("view!!");
       }, false);
-  </script>
+    </script>
+
   {% include disqus.html %}
