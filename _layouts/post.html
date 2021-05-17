@@ -2,23 +2,7 @@
 layout: default
 ---
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197098256-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-197098256-1');
-
-  var event = document.querySelector('#post-content');
-  event.addEventListener("view", function( ) {
-    gtag('event', 'view', {
-    'event_category': 'post',
-    'event_label': 'title',
-    'value': 10
-    });
-    }, false);
-  </script>
 <!-- Page Header -->
 {% if page.background %}
   <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -68,4 +52,14 @@ layout: default
     </div>
   </article>
 
+  <script>
+    var event = document.querySelector('#post-content');
+    event.addEventListener("view", function( ) {
+      gtag('event', 'action', {
+      'event_category': 'posts',
+      'event_label': 'label',
+      'value': 10
+      });
+      }, false);
+  </script>
   {% include disqus.html %}
